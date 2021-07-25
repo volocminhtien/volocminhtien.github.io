@@ -1,0 +1,301 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+*{
+	box-sizing: inherit;
+}
+.heading{
+	width: 250px;
+	height: 100%;
+	background-color: white;
+	padding-left: 150px;
+	position: fixed;
+
+}
+.heading-logo{
+	padding: 30px 20px;
+	font-size: 25px;
+	font-family: Arial;
+	font-weight: 400;
+}
+.Danh-muc{
+	padding: 40px 10px;
+	list-style: none;
+}
+.Danh-muc-item{
+	
+	padding: 10px 10px;
+	font-size: 20px;
+	font-weight: bold;
+	color: #333;
+	cursor: pointer;
+}
+.Danh-muc-item:hover{
+	background-color: #ccc;
+}
+.heading-info{
+	padding: 10px 20px;
+	cursor: pointer;
+	font-family: Arial;
+	font-size: 15px;
+}
+.heading-info:hover{
+	background-color: gray;
+}
+
+/*PHẦN CONTAIN*/
+.Contain{
+	position: absolute;
+	width: 860px;
+	height: 2000px;
+	float: right;
+	left: 400px;
+	top: 0px;
+
+}
+.contain-hinh{
+	position: relative;
+	padding-left: 10px;
+}
+.contain-hinh-img{
+	width: 100%;
+	display: block;
+}
+.contain_header{
+	width: 860px;
+	display: flex;
+	justify-content: space-between;
+	padding:24px 10px;
+}
+.contain_header-logo{
+	font-size: 30px;
+	font-family: Arial;
+
+}
+.header_item{
+	
+}
+.header_item--elemant{
+	font-size: 20px;
+	padding: 10px 15px;
+	border-radius: 5px;
+}
+.header_item--elemant:hover{
+	background-color: gray;
+	color: white;
+}
+
+.contain-hinh-element{
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 48px 24px;
+}
+.contain-hinh--title1{
+	padding: 24px 0;
+	font-size: 50px;
+	color: white;
+	font-family: Arial;
+	font-weight: 400;
+}
+.contain-hinh--tittle2{
+	padding: 12px 0;
+	font-size: 30px;
+	color: white;
+	font-family: arial;
+	font-weight: 300;
+}
+.contain-hinh_link{
+	line-height: 60px;
+	padding: 18px 20px;
+	background-color: black;
+	color: white;
+	font-family: arial;
+	border-radius: 5px;
+	text-decoration: none;
+}
+.contain-hinh_link:hover{
+	background-color: #ccc;
+}
+.contain-number-item{
+	font-size: 20px;
+	color: gray;
+	padding: 15px 10px;
+	display: block;
+}
+
+.contain-clothes{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding-left: 10px;
+}
+.contain-clothes-item{
+	width: 205px;
+	background-color: #cccccc14;
+	margin-bottom: 15px;
+	display: block;
+	position: relative;
+}
+.contain-clothes-item-img{
+	width: 100%;
+}
+.contain-clothes-info{
+	padding: 10px 0;
+	color: gray;
+}
+.contain-clothes-price{
+	font-weight: bold;
+}
+.contain-clothes-new{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.contain-clothes-label{
+	padding: 3px 10px;
+	background-color: black;color: white;
+}
+.contain-clothes-mua-hang{
+	position: absolute;
+	top: 35%;
+	margin-left: 25%;
+	display: none;
+}
+.contain-clothes-buy{
+	padding: 10px 5px;
+	background-color: black;
+	color: white;
+	cursor: pointer;
+}
+.contain-clothes-buy:hover{
+	background-color: grey;
+}
+.contain-clothes-hinh:hover .contain-clothes-mua-hang{
+	display: block;
+}
+
+.contain__subscribe{
+	width: 100%;
+	padding: 35px 10px;
+	background-color: black;
+}
+.contain__subscribe-header{
+	
+}
+.subscribe-header{
+	font-size: 40px;
+	color: white;
+	font-family: arial;
+}
+.contain__subscribe-word{
+	color: white;
+	font-family: arial;
+	padding: 15px 0;
+}
+.contain__subscribe-search{
+	width: 100%;
+	background-color: white;
+	display: flex;
+	margin-bottom: 25px;
+
+	
+}
+.header__subscribe-input{
+	height: 40px;
+	flex: 1;
+	outline: none;
+	padding-left: 10px;
+
+}
+.contain__subscribe-dang-ky{
+	width: 100px;
+	text-align: center;
+	padding: 10px 0;
+	color: white;
+	background-color: #EE4D2D;
+	cursor: pointer;
+}
+.contain__subscribe-dang-ky:hover{
+	background-color: gray;
+	color: black;
+}
+/* phần địa chỉ liên lạc*/
+.contain__add{
+	width: 100%;
+	padding: 0 10px;
+	background-color: lightgray;
+	display: flex;
+}
+.contain__add-contact{
+	width: 295px;
+	padding: 50px 0;
+	display: flex;
+	flex-direction: column;
+}
+.contain__add-contact-header{
+	text-align: center;
+	font-size: 25px;
+	font-family: arial;
+	color: #333;
+}
+.contain__add-contact-item{
+	text-align: center;
+	font-family: arial;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+.contain__app-search{
+	width: 100%;
+	display: flex;
+}
+.contain__add-input{
+	flex: 1;
+	height: 15px;
+	margin: 5px 0;
+	padding: 10px;
+	border: 1px solid black;
+}
+.contain__app-send{
+	width: 100%;
+	text-align: center;
+	background-color: black;
+	color: white;
+	padding: 7px 0;
+	cursor: pointer;
+}
+.contain__app-send:hover{
+	background-color: gray;
+}
+.contain__add-link{
+	text-align: center;
+	line-height: 18px;
+	margin-bottom: 10px;
+	color: #555;
+
+}
+.contain__add-link-first{
+	margin-top: 15px;
+}
+.contain__add-contact-link{
+	display: flex;
+	flex-direction: column;
+	padding: 50px 120px;
+}
+.contain__add-contact-store{
+padding: 50px 0px;
+}
+.contain__add-contact-icon{
+	padding: 5px 0;
+	line-height: 18px;
+	margin-bottom: 10px;
+}
+.contain__add-contact-icon i{
+	margin-right: 5px;
+}
+.contain__add-contact-icon-media:hover{
+	color: gray;
+}
