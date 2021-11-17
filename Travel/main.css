@@ -1,0 +1,296 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+.heading{
+    position: absolute;
+    top: 65%;
+    left: 200px;
+    padding: 0 14px;
+}
+.heading__photo{
+    width: 100%;
+    position: relative;
+    top:0;
+}
+.heading__content{
+    width: 100%;
+    top:450px;
+}
+.heading__content-h1{
+    color: gold;
+    font-size: 65px;
+}
+.heading__content-p{
+    color: white;
+    font-size: 20px;
+    line-height: 1.5rem;
+    font-style: italic;
+}
+.border{
+    width: 300px;
+    height: 13px;
+    background-color: gold;
+}
+.heading__form{
+    top:470px;
+}
+.heading__form-title{
+    color: white;
+    margin-left: 20px;
+    font-size: 40px;
+    font-style: italic;
+}
+.heading__input{
+    margin-left: 20px;
+    width: 470px;
+    height: 50px;
+    padding-left: 10px;
+    background-color: transparent;
+    border: 2px solid white;
+    margin-top: 10px;
+}
+.heading__input:focus, input:focus {
+    color: white;
+    font-size: 15px;
+}
+.heading__input, select, textarea{
+    color: white;
+}
+.heading__input::-webkit-input-placeholder {
+    color:white;
+}
+
+.heading__input.text{
+    height: 120px;
+}
+.Submit-btn{
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px 40px;
+    cursor: pointer;
+    background-color: gold;
+    color: white;
+}
+.Submit-btn:hover{
+    color: black;
+}
+
+.About-us{
+    width: 100%;
+    height: auto
+}
+.content{
+    padding-left: 20px;
+}
+.content p{
+    line-height: 2rem;
+    font-size: 20px;
+}
+.About-us__content{
+    color: gold;
+    margin-left: 11%;
+    padding: 50px 0;
+    font-size: 40px;
+}
+
+.About-us__img{
+    width: 450px;
+    height: 350px;
+    padding-bottom: 50px;
+}
+.content-btn{
+    background-color: gold;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.content-btn:hover{
+    color: black;
+}
+.content-2{
+    width: 100%;
+    background-color: #000000e3;
+}
+.content-2__heading{
+    text-align: center;
+    padding: 50px 0;
+}
+.content-2__heading h1{
+    color: gold;
+    font-size: 40px;
+}
+.content-2__heading p{
+    font-size: 17px;
+    color: lightgray;
+    padding: 20px 0;
+}
+.content-2__detail{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.content-2__detail h2{
+    padding: 20px 0;
+    color: white;
+}
+.content-2__detail p{
+    color: white;
+}
+.content-3{
+    width: 100%;
+    background-color: black;
+}
+.content-3__detail{
+    background-image: linear-gradient(0deg, rgba(51,50,41,0.4), rgba(51,50,41,0.4)), url(img/Field.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center center;
+   
+}
+.content-3__detail-text{
+    margin-left: 10px;
+    padding-top: 150px;
+}
+.content-3__detail-text h1{
+    color: gold;
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+.content-3__detail-text p{
+    color: white;
+    padding-bottom: 30px;
+    font-size: 17px;
+}
+.content-3__detail-text h2{
+    color: white;
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+.content-3__detail-btn{
+    margin-top: 15%;
+    margin-left: 5%;
+    padding-bottom: 30px;
+}
+.detail-btn{
+    background-color: gold;
+    color: white;
+    font-size: 25px;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+.detail-btn:hover{
+    color: black;
+}
+.content-4{
+    width: 100%;
+    height: auto;
+    background-color: #f2f2f2;
+}
+.content-4__heading{
+    text-align: center;
+    padding: 50px 0;
+}
+.content-4__heading h1{
+    color: gold;
+    font-size: 40px;
+}
+.content-4__heading p{
+    font-size: 17px;
+    color:lightslategray;
+    padding: 20px 0;
+}
+.content-4__place{
+    margin-bottom: 40px;
+    padding: 20px;;
+}
+.content-4__place img{
+    width: 100%;
+}
+.content-4__place h2{
+    background-color: white;
+    padding: 20px 10px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.content-4__place p{
+    background-color: white;
+  padding-top: 10px;
+  padding-bottom: 100px;
+  padding-left: 10px;
+  color: gray;
+  font-style: italic;
+}
+.content-4__border{
+    width: 100%;
+    height: 10px;
+    background-color: gold;
+}
+.content-5{
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(img/Beach.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+}
+.content-5__detail{
+    text-align: center;
+    padding: 50px 0;
+}
+
+.content-5__detail-desc img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.content-5__detail-desc p{
+   color: white;
+   font-size: 20px;
+}
+.content-5__detail-desc h1{
+    color: gold;
+}
+.content-6{
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url(img/workdesk.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.content-6__type{
+    padding: 60px 0;
+}
+.content-6__type img{
+    width: 100%;
+}
+.content-6__type-desc{
+    background-color: white;
+    margin-top: -4px;
+}
+.content-6__type-desc h2{
+    padding: 25px 0;
+    margin-left: 10px;
+}
+.content-6__type-desc button{
+    margin: 20px 10px;
+    background-color: gold;
+    color: white;
+    font-size: 20px;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+.content-6__type-desc button:hover{
+    color: black;
+    font-weight: bolder;
+}
+.footer{
+    text-align: center;
+    padding: 30px 0;
+    background-color: gray;
+}
+.footer p{
+    color: white;
+    font-size: 20px;
+}
+
