@@ -1,0 +1,666 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+.btn-top{
+  bottom: 20px;
+  right: 20px;
+  font-size: 20px;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  display: none;
+}
+.header{
+    width: 100%;
+}
+.header__contain{
+    width: 100%;
+    background-color:black;
+}
+.header__register{
+    margin: auto 10px;
+    font-size: 15px;
+    color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+.header__register:hover{
+    color: white;
+}
+.header__option{
+    display: none;
+    cursor: pointer;
+}
+.header__logo{
+    margin: 0 auto;
+    padding: 10px 0;
+}
+.header__search{
+    text-decoration: none;
+    margin: auto 0px;
+    color: lightgray;
+    font-size: 17px;
+    cursor: pointer;
+}
+.header__input{
+  border: 1px solid black;
+  margin-top: 30px;
+  margin-left: 30px;
+  height: 40px;
+  padding-left: 10px;
+}
+.header__input-search{
+  color:white;
+  background-color: #c30005;
+  padding: 12px 12px;
+  cursor: pointer;
+}
+.header__input-search:hover{
+  background-color: darkred;
+}
+.header__search-block::before{  /*tạo cầu nối*/
+	content: "";
+  width: 100px;
+	border: 30px solid;
+	border-color: transparent transparent transparent transparent;
+	position: absolute;
+  top:-18px;
+  right: 100px;
+	border-width: 13px 19px;
+}
+.header__search:hover .header__search-block{
+  display: block;
+}
+.header__search-block{
+  width: 259px;
+  height: 100px;
+  background-color: white;
+  position: absolute;
+  top: 60px;
+  right: 9vw;
+  z-index: 99;
+  box-shadow: 0 2px 10px #ccc;
+  display: none;
+}
+.header__cart{
+    text-decoration: none;
+    margin: auto 10px;
+    color: lightgray;
+    font-size: 20px;
+    display: flex;
+}
+.header__cart:hover{
+    color: white;
+}
+
+/* Header Menu */
+.header__menu{
+    background-color: lightgray;
+    padding: 20px 0;
+}
+.header__menu-list{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+
+}
+.header__menu-list-link{
+    color: black;
+    text-decoration: none;
+    padding: 20px 20px;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header__menu-list-link.active{
+  background-color: gray;
+  color: white;
+}
+.header__menu-list-link:hover{
+    color: white;
+    background-color: gray;
+}
+
+/* ------------------------------------------- slide */
+
+.slideshow-container {
+    max-width: 1200px;
+    position: relative;
+    margin: auto;
+    margin-top: 10px;
+    top:0;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+/* ----------------------------------------------------- Product */
+.product{
+  width: 1200PX;
+  text-align: center;
+  padding: 0 20px;
+  position: relative;
+  margin-bottom: 20px;
+
+}
+.product:hover{
+  border: 2px solid black;
+}
+.product:hover .product__btn{
+  transition: transform .6s;
+  transform: scale(1.5); 
+ 
+  opacity: 1;
+  
+}
+.product__shoes{
+  width: 100%;
+}
+.product__btn{
+  position: absolute;
+  left: 30%;
+  top: 50%;
+  color: white;
+  background-color: black;
+  padding: 10px 20px;
+ cursor: pointer;
+ opacity: 0;
+
+ transition: transform .2s;
+}
+.product__label{
+  padding-top: 10px;
+}
+/* ------------------------------------------------------- Tab UI product */
+
+.Tabs{
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid black;
+}
+.Tabs_Filter{
+  margin: 0 1px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+.Tabs_Filter:hover{
+  color: white;
+  background-color: black;
+}
+.Tabs_Filter p{
+  padding: 20px 20px;
+  font-weight: bold;
+}
+.Tabs_Filter.Active{
+  color: white;
+  background-color: black;
+}
+
+.Tab_Product{
+  display: none;
+}
+.Tab_Product.Active{
+  margin-bottom: 50px;
+  display: block;
+}
+.Tab_Product-detail{
+  margin-top: 20px;
+}
+.Tab_Product-detail:hover .Tab_Product-detail-btn{
+  transition: transform .6s;
+  transform: scale(1.2); 
+ 
+  opacity: 1;
+}
+.Tab_Product-detail img{
+  width: 100%;
+}
+.Tab_Product-detail span{
+  margin-left: 23%;
+}
+.Tab_Product-detail p{
+  margin-left: 35%;
+  color: red;
+  padding: 10px 0;
+}
+.Tab_Product-detail-btn{
+  margin-left: 30%;
+  background-color: rgb(139, 0, 0);
+  color: white;
+  padding: 5px 10px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* --------------------------------------------------Phụ kiện khác */
+.Accessory_heading{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  border-bottom: 1px solid black;
+}
+.Product-item{
+  margin: 20px 0;
+  position: relative;
+}
+.Product-item:hover .Product-item-btn{
+  transition: transform .6s;
+  transform: scale(1.2); 
+  opacity: 1;
+}
+/* .Product-item:hover{
+  transition: transform .6s;
+  transform: scale(1.1);
+} */
+.Product-item img{
+  width: 100%;
+  
+}
+.Product-item span{
+  display: flex;
+  justify-content: center;
+}
+.Product-item p{
+  display: flex;
+  justify-content: center;
+  color: red;
+  padding: 10px 0;
+}
+.Product-item-btn{
+  margin-left: 30%;
+  background-color: rgb(139, 0, 0);
+  color: white;
+  padding: 5px 10px;
+  opacity: 0;
+  cursor: pointer;
+}
+.ViewAll{
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+  text-align: center;
+}
+.ViewAll a:hover {
+  color: white;
+  background-color: black;
+}
+.ViewAll a{
+  text-decoration: none;
+  color: gray;
+  background-color: white;
+  border: 1px solid black;
+  padding: 5px 15px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Xem tất cả */
+.More{
+  display: none;
+}
+
+/* Banner */
+.Banner{
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.Banner_content{
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.6), rgba(0,0,0,0.2)), url(img/Banner.jpg);
+  background-repeat: no-repeat;
+  background-size: 1200px 600px;
+}
+.Banner_content-title{
+  display: flex;
+  justify-content: center;
+}
+.Banner_content-title h1{
+  padding: 100px 5px;
+  font-size: 70px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.ViewProduct{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 80px;
+}
+.ViewProduct a:hover {
+  color: white;
+  background-color: black;
+}
+.ViewProduct a{
+  text-decoration: none;
+  color: white;
+  background-color: transparent;
+  border: 3px solid white;
+  padding: 5px 15px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Discount Product */
+.Discount_Product{
+  margin-bottom: 50px;
+}
+.Discount_Product-heading{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  border-bottom: 1px solid black;
+}
+.Discount_label{
+  background-color: #c30005;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top:0;
+  left: 10px;
+  border-radius: 50%;
+  
+}
+.Discount_label p{
+  color: white;
+  margin-top: 2px;
+  font-size: 15px;
+}
+
+/* Footer */
+.Footer{
+  background-color: black;
+  padding: 20px 0;
+}
+.Footer_border-heading{
+  width: 40px;
+  height: 5px;
+  background-color: red;
+  margin: 15px 0;
+}
+.Address_detail{
+  list-style: none;
+}
+.Address_detail li{
+  padding: 5px 0;
+  color: rgba(255, 255, 255, 0.61);
+}
+.Menu_detail{
+  list-style: none;
+}
+.Menu_detail li a{
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.61);
+  line-height: 1.5rem;
+}
+.Menu_detail li a:hover{
+  color: red;
+}
+.Social_icon-link i{
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+.Social_icon-link i:hover{
+  opacity: 0.7;
+}
+.SignInfo input{
+  width: 100%;
+  height: 50px;
+  padding-left: 10px;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+.SignInfo button{
+  width: 100px;
+  height: 50px;
+  color: white;background-color: #c30005;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.SignInfo button:hover{
+  background-color: darkred;
+}
+
+
+
+/* Modal */
+.Modal{
+  top:0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: fixed;
+  display: none;
+}
+.Modal_overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.Modal_body{
+  width: 400px;
+  height: 700px;
+  background-color: lightblue;
+  margin: 0px auto;
+  position: relative;
+  animation-name: laptop;
+  animation-duration: 1s;  
+  animation-fill-mode: forwards;
+  border-radius: 10px;
+}
+.Modal_heading{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding: 20px 0;
+}
+@keyframes laptop{
+  from {top: -500px;}
+  to {top: 10px;}
+}
+
+/* from */
+.exitForm{
+  position: absolute;
+  right: 10px;
+  top:10px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+.exitForm:hover{
+  color: #717171;
+}
+.form-group{
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px ;
+}
+.form-label{
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #c30005;
+}
+.form-control{
+ width: 100%;
+ border: 2px solid black;
+ padding-left: 10px;
+ height: 40px;
+}
+.form-submit{
+  width: 150px;
+  background-color: #c30005;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  padding: 17px 0;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 5px;
+  font-weight: bolder;
+}
+
+.form-submit:hover{
+  background-color: darkred;
+}
+.invalid{
+  border: 2px solid red;
+}
+
+
+/* Navbar */
+.nav{
+  display: none;
+}
+.overlay{
+  position: fixed;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color:#00000066;
+}
+.nav__mobile{
+  position: fixed;
+  top:0;
+  left: 0;
+  bottom: 0;
+  background-color: white;
+  z-index: 99;
+  width:80%;
+  overflow-x:hidden;
+  overflow-y:auto;
+  display: flex;
+  animation-name: navBar;
+  animation-duration: 0.7s;  
+  animation-fill-mode: forwards;
+  
+}
+@keyframes navBar{
+  from {left: -200px;}
+  to {left: 0px;}
+}
+.nav-mobile__list{
+  list-style: none;
+  margin: 50px auto;
+  width: 100%;
+}
+.nav-mobile__link{
+  text-decoration: none;
+  text-align: center;
+  color: gray;
+  font-size: 1.9vh;
+  font-weight: bold;
+  display: block;
+  padding: 20px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  border-bottom: 1px solid #80808018;
+}
+.nav-mobile__link:hover{
+  color: #c30005;
+  background-color: #80808018;
+}
+.exits{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 25px;
+  cursor: pointer;
+  color: #c30005;
+ }
+ .exits:hover{
+     font-size: 27px;
+     color: gray;
+ }
+ .hotline{
+   text-align: center;
+   margin-top: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+ }
+

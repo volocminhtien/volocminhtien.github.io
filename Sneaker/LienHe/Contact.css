@@ -1,0 +1,89 @@
+.Contact__heading{
+    text-align: center;
+    background-image: linear-gradient(
+        0deg, rgba(51,50,41,0.4), rgba(51,50,41,0.4)), url(../img/Banner.jpg);
+    padding: 40px 0;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.Contact__heading h1{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif
+}
+.Contact__heading a,
+.Contact__heading p{
+    color: white;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Contact__content{
+    margin: 30px 0;
+    
+}
+.Contact__add{
+    position: relative;
+    animation-name: example;
+  animation-duration: 3s;  
+  animation-fill-mode: forwards;
+}
+@keyframes example {
+    from {left: -50px;}
+    to {left: 0px;}
+}
+.Contact__input{
+    position: relative;
+    animation-name: input;
+    animation-duration: 3s;  
+   animation-fill-mode: forwards;
+}
+@keyframes input {
+    from {right: -50px;}
+    to {right: 0px;}
+}
+.Contact__infor{
+    color: #c30005;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Contact__infor-detail{
+    list-style: none;
+    line-height: 2.7rem;
+}
+.Contact__infor-detail li{
+    color:#3a3636;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Input{
+    border: 2px solid #ccc;
+    height: 40px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    resize: none;
+    margin-top: 10px;
+}
+.Submit{
+    padding: 10px 100px;
+    background-color: #c30005;
+    text-align: center;
+    margin: 10px auto;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+.Submit:hover{
+    background-color:darkred;
+}
+
+

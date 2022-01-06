@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneaker Shop</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="TreEm.css">
+    <link rel="stylesheet" href="../grid.css">
+    <link rel="stylesheet" href="../font-awesome/css/all.css">
+    <link rel="stylesheet" href="../responsive.css">
+    <style>
+        *{
+          box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <button class="btn-top"><i class="fas fa-chevron-up"></i></button>
+    <div class="header">
+        <div class="header__contain">
+            <div class="grid wide">
+                <div class="row">
+                    <h2 class="header__register">ĐĂNG NHẬP / ĐĂNG KÝ</h2>
+                    <div class="header__option" href=""><i class="fas fa-align-justify"></i></div>
+                    <a class="header__logo" href=""><img width="150" height="60" src="../img/logo.png" alt=""></a>
+                    <div class="header__search">
+                        <i class="fas fa-search"></i>
+                        <div class="header__search-block">
+                            <input placeholder="tìm sản phẩm..." class="header__input" type="text">
+                            <button class="header__input-search"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                    <a class="header__cart" href="">
+                        <p>Giỏ hàng /0đ </p>
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="header__menu">
+            <ul class="header__menu-list">
+                <li><a  class="header__menu-list-link" href="">TRANG CHỦ</a></li>
+                <li><a  class="header__menu-list-link" href="">GIỚI THIỆU</a></li>
+                <li><a  class="header__menu-list-link" href="">NAM</a></li>
+                <li><a  class="header__menu-list-link" href="">NỮ</a></li>
+                <li><a  class="header__menu-list-link active" href="">TRẺ EM</a></li>
+                <li><a  class="header__menu-list-link" href="">PHỤ KIỆN</a></li>
+                <li><a  class="header__menu-list-link" href="">TIN TỨC</a></li>
+                <li><a  class="header__menu-list-link" href="">LIÊN HỆ</a></li>
+            </ul>
+        </div>
+    </div> 
+    <!-- Kết thúc phần header -->
+
+    <div class="content">
+        <div class="grid wide">
+            <h2 class="content__heading"><a href="">TRANG CHỦ</a>/NAM</h2>
+            <div class="row">
+                <div class="list col l-3 C-12">
+                    <h3 style="margin-top: 30px; font-family: Arial, Helvetica, sans-serif;">LỌC THEO GIÁ</h3>
+                    <div class="wrapper">
+                        <div class="container">
+                            <div class="slider-track"></div>
+                            <!-- <input type="range" min="600" max="1400" value="600" id="slider-1" onchange="showVal(this.value)">
+                            <input type="range" min="600" max="1400" value="1400" id="slider-2" onchange="showVal2(this.value)"> -->
+                            <input type="range" min="600" max="1400" value="600" id="slider-1" oninput="slideOne()" onchange="showVal(this.value)">
+                            <input type="range" min="600" max="1400" value="1400" id="slider-2" oninput="slideTwo()" onchange="showVal2(this.value)">
+                        </div>
+                    </div>
+                   
+                    <div class="Filter-price">
+                        <h3>GIÁ: </h3>
+                        <h3 class="price1">600K</h3>
+                        <p>-</p>
+                        <h3 class="price2">1400K</h3>
+                        <button class="Filter-btn">LỌC</button>
+                    </div>
+
+                    <h3 style="margin-top: 30px; font-family: Arial, Helvetica, sans-serif;">SẢN PHẨM</h3>
+                    
+                    <div class="List-product">
+                        <div class="List-shoes">
+                            <a href=""><img class="List-img" src="../img/Phukien/list1.jpg" alt=""></a>
+                            <div class="List-product-details">
+                                <a href="" class="List-name">Chuck 70 Psy-Kicks Ox</a>
+                                <h3 class="List-price">2,800,000 ₫</h3>
+                            </div>
+                        </div>
+                        <div class="List-shoes">
+                            <a href=""><img class="List-img" src="../img/Phukien/list2.jpg" alt=""></a>
+                            <div class="List-product-details">
+                                <a href="" class="List-name">Chuck 70 Psy-Kicks Ox</a>
+                                <h3 class="List-price">2,800,000 ₫</h3>
+                            </div>
+                        </div>
+                        <div class="List-shoes">
+                            <a href=""><img class="List-img" src="../img/Phukien/list3.jpg" alt=""></a>
+                            <div class="List-product-details">
+                                <a href="" class="List-name">Chuck 70 Psy-Kicks Ox</a>
+                                <h3 class="List-price">2,800,000 ₫</h3>
+                            </div>
+                        </div>
+                        <div class="List-shoes">
+                            <a href=""><img class="List-img" src="../img/Phukien/list4.jpg" alt=""></a>
+                            <div class="List-product-details">
+                                <a href="" class="List-name">Chuck 70 Psy-Kicks Ox</a>
+                                <h3 class="List-price">2,800,000 ₫</h3>
+                            </div>
+                        </div>
+                        <div class="List-shoes">
+                            <a href=""><img class="List-img" src="../img/Phukien/list5.jpg" alt=""></a>
+                            <div class="List-product-details">
+                                <a href="" class="List-name">Chuck 70 Psy-Kicks Ox</a>
+                                <h3 class="List-price">2,800,000 ₫</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 style="font-family: Arial, Helvetica, sans-serif;">BÀI VIẾT MỚI NHẤT</h3>
+                    <div class="List-product">
+                        <div class="List-shoes">
+                            <a href=""><img class="List-img news" src="../img/Phukien/news-1.jpg" alt=""></a>
+                            <div class="List-product-details">
+                                <a href="" class="List-news">Converse sẽ mang Golf le Fleur* Chuck 70 về Việt Nam?</a>
+                            </div>
+                        </div>
+                        <div class="List-shoes">
+                            <a href=""><img class="List-img news" src="../img/Phukien/news-2.jpg" alt=""></a>
+                            <div class="List-product-details">
+                                <a href="" class="List-news">Xinh xắn nhất những ngày này là những mẫu giày của các chàng trai BTS hợp tác cùng Converse</a>
+                            </div>
+                        </div>
+                        <div class="List-shoes">
+                            <a href=""><img class="List-img news" src="../img/Phukien/news-3.jpg" alt=""></a>
+                            <div class="List-product-details">
+                                <a href="" class="List-news">Fashionista Việt đua nhau sống “ngược” theo trào lưu “ChucksFirst? Bạn dám không?”</a>
+                            </div>
+                        </div>
+                        <div class="List-shoes">
+                            <a href=""><img class="List-img news" src="../img/Phukien/news-4.jpg" alt=""></a>
+                            <div class="List-product-details">
+                                <a href="" class="List-news">Comme des Garçons Play x Converse nhá hàng mẫu giày mới, dự kiến ra mắt vào cuối tháng này
+                                </a>
+                            </div>
+                        </div>
+                        <div class="List-shoes">
+                            <a href=""><img class="List-img news" src="../img/Phukien/news-5.png" alt=""></a>
+                            <div class="List-product-details">
+                                <a href="" class="List-news">Hội Thần Kinh Giày xôn xao với hình ảnh 18 ngàn lượt like của nhóc tì mẫu giáo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item col l-9 C-12">
+                    <div class="row">
+                        <div class="Accessory Product-item col c-6 l-3">
+                            <a href=""> <img src="../img/Children/kid-1.jpg" alt=""></a>
+                             <span>Chuck Taylor Classic</span>
+                             <p>950,000đ</p>
+                             <button class="Accessory Product-item-btn">THÊM VÀO GIỎ</button>
+                         </div>
+                         <div class="Accessory Product-item col c-6 l-3">
+                            <a href=""> <img src="../img/Children/kid-2.jpg" alt=""></a>
+                             <span>Chuck Taylor Classic</span>
+                             <p>950,000đ</p>
+                             <button class="Accessory Product-item-btn">THÊM VÀO GIỎ</button>
+                         </div>
+                         <div class="Accessory Product-item col c-6 l-3">
+                            <a href=""> <img src="../img/Children/kid-3.jpg" alt=""></a>
+                             <span>Chuck Taylor Classic</span>
+                             <p>950,000đ</p>
+                             <button class="Accessory Product-item-btn">THÊM VÀO GIỎ</button>
+                         </div>
+                         <div class="Accessory Product-item col c-6 l-3">
+                            <a href=""> <img src="../img/Children/kid-4.jpg" alt=""></a>
+                             <span>Chuck Taylor Classic</span>
+                             <p>950,000đ</p>
+                             <button class="Accessory Product-item-btn">THÊM VÀO GIỎ</button>
+                         </div>
+                         <div class="Accessory Product-item col c-6 l-3">
+                            <a href=""> <img src="../img/Children/kid-1.jpg" alt=""></a>
+                             <span>Chuck Taylor Classic</span>
+                             <p>950,000đ</p>
+                             <button class="Accessory Product-item-btn">THÊM VÀO GIỎ</button>
+                         </div>
+                         <div class="Accessory Product-item col c-6 l-3">
+                            <a href=""> <img src="../img/Children/kid-2.jpg" alt=""></a>
+                             <span>Chuck Taylor Classic</span>
+                             <p>950,000đ</p>
+                             <button class="Accessory Product-item-btn">THÊM VÀO GIỎ</button>
+                         </div>
+                         <div class="Accessory Product-item col c-6 l-3">
+                            <a href=""> <img src="../img/Children/kid-3.jpg" alt=""></a>
+                             <span>Chuck Taylor Classic</span>
+                             <p>950,000đ</p>
+                             <button class="Accessory Product-item-btn">THÊM VÀO GIỎ</button>
+                         </div>
+                         <div class="Accessory Product-item col c-6 l-3">
+                            <a href=""> <img src="../img/Children/kid-4.jpg" alt=""></a>
+                             <span>Chuck Taylor Classic</span>
+                             <p>950,000đ</p>
+                             <button class="Accessory Product-item-btn">THÊM VÀO GIỎ</button>
+                         </div>
+                         
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="Footer">
+        <div class="grid wide">
+            <div class="row">
+                <div class="Footer Intro col c-12 l-3">
+                    <h2 style="color: white;">GIỚI THIỆU</h2>
+                    <div class="Footer_border-heading"></div>
+                    <P style="color: gray;">Chào mừng bạn đến với ngôi nhà Converse! Tại đây, mỗi một dòng chữ, mỗi chi tiết và hình ảnh đều là những bằng chứng mang 
+                        dấu ấn lịch sử Converse 100 năm, 
+                        và đang không ngừng phát triển lớn mạnh.</P>
+                </div>
+                <div class="Footer Address col c-12 l-3">
+                    <h2 style="color: white;">ĐỊA CHỈ</h2>
+                    <div class="Footer_border-heading"></div>
+                    <ul class="Address_detail">
+                        <li><i style="margin-right: 10px;" class="fas fa-map-marker-alt"></i>319 C16 Lý Thường Kiệt, Phường 15, Quận 11, Tp.HCM</li>
+                        <li><i style="margin-right: 10px;" class="fas fa-phone"></i>076 922 0162</li>
+                        <li><i style="margin-right: 10px;" class="fas fa-envelope"></i>demonhunterg@gmail.com
+                        mon@mona.media</li>
+                        <li><i style="margin-right: 10px;" class="fab fa-skype"></i>demonhunterp</li>
+                    </ul>
+                </div>
+                <div class="Footer Menu col c-12 l-3">
+                    <h2 style="color: white;">MENU</h2>
+                    <div class="Footer_border-heading"></div>
+                    <ul class="Menu_detail">
+                        <li><a href="">Trang chủ</a></li>
+                        <li><a href="">Cửa hàng</a></li>
+                        <li><a href="">Liên hệ</a></li>
+                        <li><a href="">Giới thiệu</a></li>
+                        <li><a href="">Tin tức</a></li>
+                    </ul>
+                </div>
+                <div class="Footer Social col c-12 l-3">
+                    <h2 style="color: white;">MẠNG XÃ HỘI</h2>
+                    <div class="Footer_border-heading"></div>
+                    <div style="margin-bottom: 20px;" class="social_icon" >
+                        <div class="Social_icon-link">
+                            <i style="color: white; background-color: skyblue; padding: 5px 9px;" class="fab fa-facebook-f"></i>
+                            <i  style="color: white; background-color:red; padding: 7px 9px;" class="fab fa-instagram"></i>
+                            <i  style="color: white; background-color: lightskyblue; padding: 7px 9px;" class="fab fa-twitter"></i>
+                            <i  style="color: white; background-color: plum; padding: 7px 9px;" class="fab fa-pinterest"></i>
+                            <i  style="color: white; background-color: violet; padding: 7px 7px;" class="fab fa-google-plus-g"></i>
+                        </div>
+                    </div>
+                </div>
+                <iframe class="video col l-6 m-6 c-12 " height="315vh" src="https://www.youtube.com/embed/geFi-ZpN2ZM"></iframe>
+                <div class="SignInfo col l-6 m-6 c-12">
+                    <h2 style="color: white;font-family: Arial;">ĐĂNG KÝ NHẬN THÔNG TIN</h2>
+                    <input placeholder="Email" type="text" name="" id=""><button>ĐĂNG KÝ</button></input>
+                    <div class="Payment">
+                        <a href=""><img src="../img/Credit Card/payment1.png" alt=""></a>
+                        <a href=""><img src="../img/Credit Card/payment2.png" alt=""></a>
+                        <a href=""><img src="../img/Credit Card/payment3.png" alt=""></a>
+                        <a href=""><img src="../img/Credit Card/payment4.png" alt=""></a>
+                        <a href=""><img src="../img/Credit Card/payment5.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+    
+   <!-- Modal -->
+   <div class="Modal">
+    <div class="Modal_overlay">
+
+    </div>
+    <div class="Modal_body">
+        <div class="Modal_inner">
+            <h1 class="Modal_heading">ĐĂNG KÝ</h1>
+            <h2 class="exitForm"><i class="fas fa-times"></i></h2>
+            <div class="form-group">
+                <label class="form-label" for="Fullname">Tên đầy đủ</label>
+                <input id="fullname" name="fullname" class="form-control" placeholder="Họ và tên" type="text">
+                <span style="color:red" class="form-message Name"></span>
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label" for="Email">Email</label>
+                <input id="email" name="email" class="form-control" placeholder="Email" type="text">
+                <span style="color:red" class="form-message Email"></span>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="Password">Mật Khẩu</label>
+                <input id="password" name="password" class="form-control" placeholder="Mật khẩu" type="password">
+                <span style="color:red" class="form-message Password"></span>
+            </div>
+
+
+            <div class="form-group">
+                <label class="form-label" for="password-confirm">Nhập lại mật khẩu</label>
+                <input id="password-confirm" name="password-confirm" class="form-control" placeholder="Nhập lại mật khẩu" type="password">
+                <span style="color:red" class="form-message Confirm"></span>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Giới tính</label>
+                <input id="check" name="gender" type="radio" value="male">Nam
+                <input id="check" name="gender" type="radio" value="female">Nữ
+            </div>
+            
+            <div class="form-submit">Đăng ký</div>
+        </div>
+    </div>
+   </div>
+
+   <!-- NavBar Menu -->
+   <div class="nav">
+    <!-- Nav PC -->
+    <div class="overlay"></div>
+
+    <nav class="nav__mobile">
+        <ul class="nav-mobile__list">
+            <li>
+                <a href="" class="nav-mobile__link">TRANG CHỦ</a>
+            </li>
+            <li>
+                <a href="" class="nav-mobile__link">GIỚI THIỆU</a>
+            </li>
+            <li>
+                <a href="" class="nav-mobile__link">NỮ</a>
+            </li>
+            <li>
+                <a href="" class="nav-mobile__link">NAM</a>
+            </li>
+            <li>
+                <a href="" class="nav-mobile__link">TRẺ EM</a>
+            </li>
+            <li>
+                <a href="" class="nav-mobile__link">PHỤ KIỆN KHÁC</a>
+            </li>
+            <li>
+                <a href="" class="nav-mobile__link">TIN TỨC</a>
+            </li>
+            <li>
+                <a href="" class="nav-mobile__link">LIÊN HỆ</a>
+            </li>
+            <li>
+                <p id="nav-logIn" class="nav-mobile__link">ĐĂNG KÝ</p>
+            </li>
+
+            <h3 class="hotline">HOTLINE:  076 922 0162</h3>
+        </ul>
+        <div class="exits">
+            <i class="fas fa-times"></i>
+        </div>
+    </nav>
+</div>
+   
+    
+  
+    <script src="content.js"></script>
+</body>
+</html>

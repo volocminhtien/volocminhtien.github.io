@@ -1,0 +1,110 @@
+/* Tablet */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    .row{
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+    .header__cart p{
+        display: none;
+    }
+    .header__register{
+        display: none;
+    }
+    .header__option{
+        display: block;
+        margin: auto 0;
+        color: white;
+        font-size: 30px;
+    }
+    .header__menu{
+        display: none;
+    }
+    .slideshow-container{
+        margin-top: 0px;
+    }
+    .product__btn{
+        left: 20%;
+        top: 50%;
+    }
+    .product:hover .product__btn{
+        transform: scale(1.1); 
+    }
+    .nav-mobile__list{
+        margin-top: 40px;
+    }
+    .nav-mobile__link{
+        font-size: 2vh;
+    }
+
+}
+
+/* Mobile */
+@media only screen and (max-width: 46.1875em) {
+    .row{
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+    .header__cart p{
+        display: none;
+    }
+    .header__register{
+        display: none;
+    }
+    .header__option{
+        display: block;
+        margin: auto 0;
+        color: white;
+        font-size: 30px;
+    }
+    .header__search{
+        display: none;
+    }
+    .header__menu{
+        display: none;
+    } 
+    .slideshow-container{
+        margin-top: 0px;
+    }
+    .slideshow-container img{
+        height: 300px;
+    }
+    .Tab_Product-detail span{
+        margin-left: 10%;
+    }
+    .Tab_Product-detail p{
+        margin-left: 10%;
+    }
+    .Tab_Product-detail-btn{
+        opacity: 1;
+        margin-left: 10%;
+    }
+    .Product-item{
+        width: 100px;
+    }
+    .Product-item span{
+        display: inline-block;
+        max-width: 100%;
+        white-space: nowrap; 
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .Product-item-btn{
+        opacity: 1;
+        margin-left: 15%;
+    }
+    .Banner_content-title{
+        padding: 50px 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .Banner_content-title h1{
+        padding: 10px 10px;
+        font-size: 2.4rem;
+    }
+    .Modal_body{
+        width: auto;
+        margin: 0 10px;
+    }
+}
+
