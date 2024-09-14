@@ -1,0 +1,77 @@
+.contact-wrapper{
+    background: url(../images/bg-banner.png) no-repeat top / contain;
+    .contact-title{
+        margin-left: 6rem;
+        @media (max-width:767px){
+            margin: 0;
+        }
+    }
+    .chatcall{
+        padding: 0 3rem;
+        .chatcall_item{
+            background-color: $cl-white;
+            padding: 2rem 3rem;
+            box-shadow: 0 5px 10px rgba($color:#7E76F9,$alpha: 0.1);
+            border-radius: 20px;
+            height: 100%;
+            .call_now{
+                background-color: #F4F8FF;
+                padding: 7px 20px;
+                border-radius: 10px;
+            }
+        }
+        @media (max-width:767px){
+            padding: 0;
+            .chatcall_item{
+                padding: 1rem;
+                height: auto;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+    .form-wrapper{
+        background-color: $cl-white;
+        box-shadow: 0 5px 10px rgba($color:#7E76F9,$alpha: 0.1);
+        border-radius: 20px;
+        padding:3rem 6rem;
+        .infor-site{
+            .list-infor{
+                margin-bottom: 3rem;
+                .key{
+                    color: $cl-pink;
+                    padding-right: 40px;
+                }
+                .mail_break{
+                    word-break: break-all;
+                }
+            }
+        }
+        .form_layout{
+            .form-label{
+                color:$cl-lightgray ;
+            }
+            .form-control{
+                padding: 5px 0;
+                border: 0;
+                border-bottom: 2px solid #82869152;
+                border-radius: 0;
+                &:focus{
+                    box-shadow: none;
+                }
+            }
+            .btn-submit{
+                border: 0;
+                border-radius: 10px;
+                padding: 10px 30px;
+                background: rgb(254,86,137);
+                background: linear-gradient(90deg, rgba(254,86,137,1) 0%, rgba(254,146,138,1) 100%);
+                color: $cl-white;
+                box-shadow: 0 5px 10px rgba($color:#7E76F9,$alpha: 0.1);
+                margin-bottom: 1rem;
+            }
+        }
+        @media (max-width:767px){
+            padding: 1rem;
+        }
+    }
+}

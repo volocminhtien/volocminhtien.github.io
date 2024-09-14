@@ -1,0 +1,54 @@
+@font-face {
+    font-family: '1FTV VIP Classico URW';
+    src: url('1FTVVIPClassicoURW-Bol.woff2') format('woff2'),
+        url('1FTVVIPClassicoURW-Bol.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: '1FTV VIP Europa';
+    src: url('1FTVVIPEuropa-Bold.woff2') format('woff2'),
+        url('1FTVVIPEuropa-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: '1FTV VIP Classico URW';
+    src: url('1FTVVIPClassicoURW-Med.woff2') format('woff2'),
+        url('1FTVVIPClassicoURW-Med.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: '1FTV VIP Classico URW';
+    src: url('1FTVVIPClassicoURW-Reg.woff2') format('woff2'),
+        url('1FTVVIPClassicoURW-Reg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: '1FTV VIP Europa';
+    src: url('1FTVVIPEuropa-Regular.woff2') format('woff2'),
+        url('1FTVVIPEuropa-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: '1FTV VIP Europa';
+    src: url('1FTVVIPEuropa-Light.woff2') format('woff2'),
+        url('1FTVVIPEuropa-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+

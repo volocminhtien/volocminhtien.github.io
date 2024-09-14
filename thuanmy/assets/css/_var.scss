@@ -1,0 +1,204 @@
+@font-face {
+  font-family: 'Fahkwang';
+  src: url('../fonts/font-using/Fahkwang-Medium.woff2') format('woff2'),
+      url('../fonts/font-using/Fahkwang-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fahkwang';
+  src: url('../fonts/font-using/Fahkwang-Regular.woff2') format('woff2'),
+      url('../fonts/font-using/Fahkwang-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fahkwang';
+  src: url('../fonts/font-using/Fahkwang-SemiBold.woff2') format('woff2'),
+      url('../fonts/font-using/Fahkwang-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fahkwang';
+  src: url('../fonts/font-using/Fahkwang-Bold.woff2') format('woff2'),
+      url('../fonts/font-using/Fahkwang-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura PT Book';
+  src: url('../fonts/font-using/FuturaPT-Book.woff2') format('woff2'),
+      url('../fonts/font-using/FuturaPT-Book.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Futura PT Demi';
+  src: url('../fonts/font-using/FuturaPT-Demi.woff2') format('woff2'),
+      url('../fonts/font-using/FuturaPT-Demi.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+
+
+$font-family: 'Futura PT Book', sans-serif;
+$font-title: 'Fahkwang';
+$cl-blue: #162278;
+$cl-pink: #CB2EA4;
+$cl-purple: #642667;
+
+.cl-blue{
+  color: $cl-blue;
+}
+.cl-white{
+  color: white;
+}
+.cl-pink{
+  color: $cl-pink;
+}
+.cl-purple{
+  color: $cl-purple;
+}
+
+
+.f-title{
+  font-family: $font-title;
+}
+.fw-black{
+  font-weight: 900;
+}
+.fw-medium{
+  font-weight: 500;
+}
+.fw-600{
+  font-weight: 600;
+}
+.fw-book{
+  font-weight: 350;
+}
+.fw-700{
+  font-weight: 700;
+}
+.fs-56{
+  font-size: 56px;
+}
+.fs-50{
+  font-size: 50px;
+}
+.fs-45{
+  font-size: 45px;
+}
+.fs-40{
+  font-size: 40px;
+}
+.fs-36{
+  font-size: 36px;
+}
+.fs-28{
+  font-size: 28px;
+}
+.fs-24{
+  font-size: 24px;
+}
+.fs-22{
+  font-size: 22px;
+}
+.fs-20{
+  font-size: 20px;
+}
+.fs-18{
+  font-size: 18px;
+}
+.fs-16{
+  font-size: 16px;
+}
+.fs-14{
+  font-size: 14px;
+}
+.fs-12{
+  font-size: 12px;
+}
+.fs-10{
+  font-size: 10px;
+}
+
+
+.text-justify{
+  text-align: justify;
+}
+
+@media (max-width: 1400px){
+  .fs-56{
+    font-size: 36px;
+  }
+  .fs-45{
+    font-size: 30;
+  }
+}
+@media (max-width: 767px) {
+  .fs-45{
+    font-size: 28px;
+  }
+  .fs-36{
+    font-size: 30px;
+  }
+  .fs-28{
+    font-size: 20px;
+  }
+  .fs-24{
+    font-size: 18px;
+  }
+  .fs-18{
+    font-size: 16px;
+  }
+  .fs-16{
+    font-size: 14px;
+  }
+  .fs-14{
+    font-size: 13px;
+  }
+}
+@media (min-width: 768px) and (max-width:1024px){
+  .fs-56{
+    font-size: 36px;
+  } 
+  .fs-45{
+    font-size: 30px;
+  }
+  .fs-40{
+    font-size: 36px;
+  }
+  .fs-24{
+    font-size: 18px;
+  }
+}
+
+@mixin transform($property){
+  -webkit-transform: $property;
+  -moz-transform: $property;
+  -ms-transform: $property;
+  -o-transform: $property;
+  transform: $property;
+}
+@mixin transition($property){
+  -webkit-transition: $property;
+  -moz-transition: $property;
+  -ms-transition: $property;
+  -o-transition: $property;
+  transition: $property;
+}
