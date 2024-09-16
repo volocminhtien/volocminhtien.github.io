@@ -3,7 +3,9 @@
         z-index: 1;
         position: relative;
         padding-bottom: 5rem;
-        
+        @media (max-width:767px){
+            padding-bottom: 0;
+        }        
         &::before{
             position: absolute;
             bottom: 0;
@@ -14,7 +16,34 @@
             right: 0;
             left: 0;
             z-index: -1;
-            border-top-right-radius: 50%;
+            border-top-right-radius: 40%;
+        }
+    }
+    .about_mission{
+        z-index: 1;
+        position: relative;
+        background-color: #f6f6f6;
+        padding: 5rem 0;
+        @media (max-width:767px){
+            padding: 3rem 0;
+        }        
+        &::before{
+            position: absolute;
+            bottom: 0;
+            height: 100%;
+            background-color: white;
+            content: "";
+            width: 100%;
+            right: 0;
+            left: 0;
+            z-index: -1;
+            border-top-right-radius: 40%;
+            @media (max-width:767px){
+                display: none;
+            }            
+        }
+        img{
+            border-radius: 15px;
         }
     }
 }

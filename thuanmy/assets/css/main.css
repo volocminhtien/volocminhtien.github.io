@@ -201,6 +201,12 @@
   padding-bottom: 5rem;
 }
 
+@media (max-width: 767px) {
+  .about_page_wrapper .about_page_desc {
+    padding-bottom: 0;
+  }
+}
+
 .about_page_wrapper .about_page_desc::before {
   position: absolute;
   bottom: 0;
@@ -211,7 +217,133 @@
   right: 0;
   left: 0;
   z-index: -1;
-  border-top-right-radius: 50%;
+  border-top-right-radius: 40%;
+}
+
+.about_page_wrapper .about_mission {
+  z-index: 1;
+  position: relative;
+  background-color: #f6f6f6;
+  padding: 5rem 0;
+}
+
+@media (max-width: 767px) {
+  .about_page_wrapper .about_mission {
+    padding: 3rem 0;
+  }
+}
+
+.about_page_wrapper .about_mission::before {
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  background-color: white;
+  content: "";
+  width: 100%;
+  right: 0;
+  left: 0;
+  z-index: -1;
+  border-top-right-radius: 40%;
+}
+
+@media (max-width: 767px) {
+  .about_page_wrapper .about_mission::before {
+    display: none;
+  }
+}
+
+.about_page_wrapper .about_mission img {
+  border-radius: 15px;
+}
+
+.special_page_wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.special_page_wrapper .key_speccial {
+  background-color: #f6f6f6;
+  border-top-right-radius: 40%;
+  padding: 7rem 0;
+}
+
+@media (max-width: 767px) {
+  .special_page_wrapper .key_speccial {
+    border-radius: 0;
+    padding: 3rem 0;
+  }
+}
+
+.special_page_wrapper .key_speccial .key_item {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.special_page_wrapper .key_speccial .key_item .title-key {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: #642667;
+  border-radius: 4px;
+  padding: 5px 20px;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  color: #f3f4ff;
+}
+
+.special_page_wrapper .all_special {
+  background-color: #f6f6f6;
+}
+
+.special_page_wrapper .all_special .accordion-item {
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.special_page_wrapper .all_special .accordion-item .accordion-header button {
+  background-color: #162278;
+  color: white;
+}
+
+.special_page_wrapper .all_special .accordion-item .accordion-header button::after {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
+
+.special_page_wrapper .all_special .accordion-item .accordion-header button.collapsed {
+  background-color: #ececec;
+  color: #162278;
+}
+
+.special_page_wrapper .all_special .accordion-item .accordion-header button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.special_page_wrapper .all_special .accordion-item .accordion-body {
+  color: #162278;
+  font-size: 20px;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  z-index: 3;
+  background: white;
+}
+
+.special_page_wrapper .home_package::before {
+  display: none;
+}
+
+.special_page_wrapper .home_package .arr-style {
+  background-color: #ececec !important;
+}
+
+.page_doctor_wrapper {
+  position: relative;
+  z-index: 1;
 }
 
 body {
@@ -340,6 +472,18 @@ body .btn_web a {
   top: 0;
 }
 
+.page_child_wrapper .banner_child::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, color-stop(-1.89%, #FFF), color-stop(31.36%, rgba(255, 255, 255, 0.62)), color-stop(54.86%, rgba(255, 255, 255, 0)));
+  background: linear-gradient(90deg, #FFF -1.89%, rgba(255, 255, 255, 0.62) 31.36%, rgba(255, 255, 255, 0) 54.86%);
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
   .page_child_wrapper .banner_child {
     height: auto;
@@ -379,10 +523,16 @@ body .btn_web a {
   padding-top: 7rem;
 }
 
+@media (max-width: 767px) {
+  .page_child_wrapper .section_form_booking {
+    padding-top: 3rem;
+  }
+}
+
 .page_child_wrapper .section_form_booking .booking_wrap {
   background-color: white;
   padding: 5rem 0;
-  border-top-right-radius: 50%;
+  border-top-right-radius: 40%;
 }
 
 @media (max-width: 767px) {
@@ -519,7 +669,7 @@ body .btn_web a {
 .home_about {
   background-color: #f6f6f6;
   padding: 15rem 0 0 0;
-  border-top-right-radius: 50%;
+  border-top-right-radius: 40%;
   z-index: 2;
   position: relative;
 }
@@ -577,7 +727,7 @@ body .btn_web a {
   right: 0;
   left: 0;
   z-index: -1;
-  border-top-right-radius: 50%;
+  border-top-right-radius: 40%;
 }
 
 @media (max-width: 767px) {
@@ -892,7 +1042,7 @@ body .btn_web a {
   right: 0;
   left: 0;
   z-index: -1;
-  border-top-right-radius: 50%;
+  border-top-right-radius: 40%;
 }
 
 @media (max-width: 767px) {

@@ -1,5 +1,7 @@
 @import "_var.scss";
 @import "about/about";
+@import "specialties/specialties";
+@import "doctor/doctor";
 
 
 body{
@@ -89,6 +91,16 @@ body{
     position: relative;
     position: sticky;
     top: 0;
+    &::before{
+      position: absolute;
+      content: "";
+      width: 100%;
+      top: 0;
+      right: 0;
+      left: 0;
+      height: 100%;
+      background: linear-gradient(90deg, #FFF -1.89%, rgba(255, 255, 255, 0.62) 31.36%, rgba(255, 255, 255, 0.00) 54.86%);
+    }
     @media (min-width: 768px) and (max-width:1024px){
       height: auto;     
     }
@@ -119,10 +131,13 @@ body{
     position: relative;
     z-index: 1;
     padding-top: 7rem;
+    @media (max-width:767px){
+      padding-top: 3rem;
+    }
     .booking_wrap{
       background-color: white;
       padding: 5rem 0;
-      border-top-right-radius: 50%;
+     border-top-right-radius: 40%;
       @media (max-width:767px){
         border-radius: 0;
       }
@@ -229,7 +244,7 @@ body{
 .home_about{
   background-color: #f6f6f6;
   padding: 15rem 0 0 0;
-  border-top-right-radius: 50%;
+ border-top-right-radius: 40%;
   z-index: 2;
   position: relative;
   @media (min-width: 768px) and (max-width:1024px){
@@ -272,7 +287,7 @@ body{
     right: 0;
     left: 0;
     z-index: -1;
-    border-top-right-radius: 50%;
+   border-top-right-radius: 40%;
     @media (max-width:767px){
       display: none;
     }
@@ -494,7 +509,7 @@ body{
     right: 0;
     left: 0;
     z-index: -1;
-    border-top-right-radius: 50%;
+   border-top-right-radius: 40%;
     @media (max-width:767px){
       display: none;
     }
